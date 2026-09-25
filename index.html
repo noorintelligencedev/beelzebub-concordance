@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Beelzebub Concordance Wiki</title>
+    <style>
+        :root {
+            --bg-color: #0f1115;
+            --card-bg: #161920;
+            --text-primary: #e2e8f0;
+            --text-secondary: #94a3b8;
+            --accent-gold: #d97706;
+            --accent-border: #262c36;
+            --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: var(--font-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 1.5rem 2rem 1.5rem;
+            border-bottom: 1px solid var(--accent-border);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.025em;
+            color: #f8fafc;
+        }
+
+        header p.subtitle {
+            color: var(--accent-gold);
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-top: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        .manifesto {
+            background-color: var(--card-bg);
+            border: 1px solid var(--accent-border);
+            border-left: 4px solid var(--accent-gold);
+            padding: 2rem;
+            border-radius: 4px;
+            margin-bottom: 3rem;
+        }
+
+        .manifesto h2 {
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+
+        .manifesto p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--accent-border);
+            padding: 1.5rem;
+            border-radius: 4px;
+            transition: border-color 0.2s ease;
+        }
+
+        .card:hover {
+            border-color: var(--accent-gold);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+
+        .card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .card a {
+            color: var(--accent-gold);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid var(--accent-border);
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Beelzebub's Tales Concordance</h1>
+        <p class="subtitle">An Interconnected Architecture of Gurdjieff's Neologisms</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="manifesto">
+            <h2>The Knitted Web</h2>
+            <p>Gurdjieff’s <em>Beelzebub’s Tales to His Grandson</em> is structured as a closed, self-contained semantic universe. Terms do not merely appear once; they echo, shift, and anchor across chapters, bound together by fundamental cosmological laws like the <strong>Triamazikamno</strong> and <strong>Heptaparaparshinokh</strong>.</p>
+            <p>This wiki maps those connections. Every neologism, character, and vessel functions as an interactive hub page tracking occurrences, contextual shifts, and 1950s first-edition page locators.</p>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Explore Chapters</h3>
+                <p>Read structured breakdowns of each chapter, complete with neologism inventories, law mappings, and ELI5 commentary layers.</p>
+                <p><a href="./chapters/chapter-01.html">Enter Chapter 1 &rarr;</a></p>
+            </div>
+
+            <div class="card">
+                <h3>Term Hubs (Neologisms)</h3>
+                <p>Access master indexes for central entities like <strong>Beelzebub</strong>, <strong>Hassein</strong>, <strong>Kalasiko</strong>, and <strong>Heropass</strong>.</p>
+                <p><a href="./terms/hassein.html">View Term Indexes &rarr;</a></p>
+            </div>
+
+            <div class="card">
+                <h3>Repository & Source</h3>
+                <p>Built entirely on static web principles. Inspect the raw Markdown files, contribute corrections, or fork the project on GitHub.</p>
+                <p><a href="https://github.com/your-username/beelzebub-concordance" target="_blank">View on GitHub &rarr;</a></p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Concordance Wiki Project. Hosted on GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
